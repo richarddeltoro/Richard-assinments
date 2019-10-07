@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box; 
+    font-size: 0px;
+}
+
+
+
+
+div{
+ background-color: #F5C6D6;
+    height: fit-content;
+    padding: 30px;
+}
+
+.pkrow{
+    margin-top: 83px;
+    height: 104px;
+    margin-right: 364px;
+    margin-left: 313px;
+    border-radius: 39px;
+} 
+
+.pkr-row1 {
+    height: 94px;
+    background-color: #EE2E84;
+    margin-right: 912px;
+    margin-left: 314px;
+    font-stretch: condensed;
+    margin-top: 11px;
+    margin-bottom: 14px;
+    border-radius: 30px;
+}
+
+
+.pkr-row2{
+    height: 94px;
+    background-color: #EE2E84;
+    margin-right: 937px;
+    margin-left: 293px;
+    font-stretch: condensed;
+    margin-top: 11px;
+    margin-bottom: 14px;
+    position: relative;
+    left: 216px;
+    position: relative;
+    top: -109px;
+    border-radius: 34px;
+}
+
+.pkr-row3{
+    border-radius: 30px;
+    height: 94px;
+    background-color: #EE2E84;
+    margin-right: 939px;
+    margin-left: 304px;
+    font-stretch: condensed;
+    margin-top: 11px;
+    margin-bottom: 14px;
+    position: relative;
+    left: 216px;
+    position: relative;
+    left: 397px;
+    position: relative;
+    top: -217px;
+}
+
+
+.pkr-row4{
+    border-radius: 30px;
+    height: 94px;
+    background-color: #EE2E84;
+    margin-right: 939px;
+    margin-left: 304px;
+    font-stretch: condensed;
+    margin-top: 11px;
+    margin-bottom: 14px;
+    position: relative;
+    left: 216px;
+    position: relative;
+    left: 573px;
+    position: relative;
+    top: -326px;
+}
+
+
+.babyblue1{
+    background-color: #85CFD8;
+    margin-right: 720px;
+    margin-left: 312px;
+    font-stretch: condensed;
+    position: relative;
+    top: -329px;
+    padding: 54px;
+    border-radius: 26px;
+}
+
+.babyblue2{
+    background-color: #85CFD8;
+    margin-right: 754px;
+    margin-left: 312px;
+    font-stretch: condensed;
+    position: relative;
+    top: -329px;
+    padding: 54px;
+    position: relative;
+    left: 393px;
+    position: relative;
+    top: -436px;
+    border-radius: 26px;
+}
+
+.green{
+    background-color: #8DC63F;
+    margin-right: 549px;
+    margin-left: 313px;
+    font-stretch: condensed;
+    position: relative;
+    bottom: 424px;
+    padding: 56px;
+    border-radius: 37px;
+}
+
+.orangered{
+    margin-top: -3px;
+    border-radius: 25px;
+    background-color: #E76E34;
+    margin-right: 360px;
+    margin-left: 872px;
+    font-stretch: condensed;
+    padding: 55px;
+    position: relative;
+    bottom: 532px;
+}
+
+
+
+
+
+
+
