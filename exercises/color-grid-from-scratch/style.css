@@ -23,7 +23,7 @@ div{
 .pkr-row1 {
     height: 94px;
     background-color: #EE2E84;
-    margin-right: 912px;
+    margin-right: 1224px;
     margin-left: 314px;
     font-stretch: condensed;
     margin-top: 11px;
@@ -35,53 +35,36 @@ div{
 .pkr-row2{
     height: 94px;
     background-color: #EE2E84;
-    margin-right: 937px;
-    margin-left: 293px;
+    margin-right: 1224px;
+    margin-left: 314px;
     font-stretch: condensed;
     margin-top: 11px;
     margin-bottom: 14px;
-    position: relative;
-    left: 216px;
-    position: relative;
-    top: -109px;
-    border-radius: 34px;
+    border-radius: 30px;
 }
 
 .pkr-row3{
-    border-radius: 30px;
     height: 94px;
     background-color: #EE2E84;
-    margin-right: 939px;
-    margin-left: 304px;
+    margin-right: 1224px;
+    margin-left: 314px;
     font-stretch: condensed;
     margin-top: 11px;
     margin-bottom: 14px;
-    position: relative;
-    left: 216px;
-    position: relative;
-    left: 397px;
-    position: relative;
-    top: -217px;
+    border-radius: 30px;
 }
 
 
 .pkr-row4{
-    border-radius: 30px;
     height: 94px;
     background-color: #EE2E84;
-    margin-right: 939px;
-    margin-left: 304px;
+    margin-right: 1224px;
+    margin-left: 314px;
     font-stretch: condensed;
     margin-top: 11px;
     margin-bottom: 14px;
-    position: relative;
-    left: 216px;
-    position: relative;
-    left: 573px;
-    position: relative;
-    top: -326px;
+    border-radius: 30px;
 }
-
 
 .babyblue1{
     background-color: #85CFD8;

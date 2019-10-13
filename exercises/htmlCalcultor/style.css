@@ -1,0 +1,62 @@
+.myHoleWebPage{
+    position: relative;
+    bottom: -5%;
+    border-radius: 20%;
+    background-color: black;
+    margin-top: 60px;
+    margin-bottom: 505px
+
+}
+
+.addingdiv{    
+    color: whitesmoke;
+    border-radius: 51%;
+    border: black solid 7px;
+    background-color: blue;
+    height: 33px;
+    width: 336px;
+    padding: 96px;
+    margin-bottom: 290px;
+}
+
+button{
+    border-radius: 41%;
+    height: 76%;
+    width: 14%;
+}
+
+.subtract{
+    color: aliceblue;
+    border-radius: 51%;
+    border: black solid 7px;
+    background-color: blue;
+    height: 33px;
+    width: 336px;
+    padding: 96px;
+    position: relative;
+    right: -743px;
+    bottom: 251px;
+}
+.div{
+    color: aliceblue;
+    position: relative;
+    bottom: 219px;
+    border-radius: 51%;
+    border: black solid 7px;
+    background-color: blue;
+    height: 33px;
+    width: 336px;
+    padding: 96px;
+}
+.multi{
+    color: aliceblue;
+    border-radius: 51%;
+    border: black solid 7px;
+    background-color: blue;
+    height: 33px;
+    width: 336px;
+    padding: 96px;
+    position: relative;
+    bottom: 460px;
+    right: -747px;
+}

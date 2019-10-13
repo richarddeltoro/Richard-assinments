@@ -1,15 +1,96 @@
-.blue{
-    padding: 30px;
+.france{
     background-color: blue;
-    border: 1px solid black;
-    margin-right: 1169px;
-    height: 86px;
-    font-size: 0px;
+    border: black solid 3px;
+    height: 193px;
+    width: 321px;
 }
 
+.germany{
+    background-color: blue;
+    border: black solid 3px;
+    height: 195px;
+    width: 320px;
+    position: relative;
+    right: -334px;
+    top: -200px;
+}
 
+.madagascar{
+    background-color: blue;
+    border: black solid 3px;
+    height: 195px;
+    width: 321px;
+    position: relative;
+    right: -668px;
+    bottom: 400px;
+}
 
+.switzerland{
+    background-color: blue;
+    border: black solid 3px;
+    height: 195px;
+    width: 321px;
+    position: relative;
+    right: -1002px;
+    bottom: 601px;
+}
 
+.sweden{
+    background-color: blue;
+    border: black solid 3px;
+    height: 195px;
+    width: 321px;
+    position: relative;
+    right: 1px;
+    bottom: 594px;
+}
 
+.gambia{
+    background-color: blue;
+    border: black solid 3px;
+    height: 195px;
+    width: 321px;
+    position: relative;
+    right: -334px;
+    bottom: 794px;
+}
 
+.tonga{
+    background-color: blue;
+    border: black solid 3px;
+    height: 195px;
+    width: 321px;
+    position: relative;
+    right: -667px;
+    bottom: 995px;
+}
 
+.japan{
+    background-color: blue;
+    border: black solid 3px;
+    height: 195px;
+    width: 321px;
+    position: relative;
+    right: -1002px;
+    bottom: 1195px;
+}
+
+.greece{
+    background-color: blue;
+    border: black solid 3px;
+    height: 195px;
+    width: 321px;
+    position: relative;
+    right: -1336px;
+    bottom: 1606px;
+}
+
+.niger{
+    background-color: blue;
+    border: black solid 3px;
+    height: 195px;
+    width: 321px;
+    position: relative;
+    right: -1336px;
+    bottom: 1597px;
+}

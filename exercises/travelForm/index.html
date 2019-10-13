@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form name ="passengerForm">
+        DO YOU NEED TO GET OUT OF HERE?
+        <br>
+        <input type ="text" placeholder ="Your First Name"  name = "firstname">
+        <input type ="text" placeholder ="Your last Name"  name = "lastname">
+        <input type = "number" placeholder ="how old are you?" name ="age">
+        <br>
+        What do you think you are?
+        <br>
+         Male <input type ="radio" value ="Male" name ="gender">
+         Female <input type ="radio" value ="Female" name ="gender">
+         Or completely lost<input type ="radio" value ="Completely lost" name ="gender">
+         <br>
+         Where would you like to escape to ?
+         <br>
+         <select name = "flyto">
+            <option value ="lasvegas">Sin City</option>
+            <option value ="newyork">New York City</option>
+            <option value ="someWhereNotHere">Some Where Not Here</option>
+         </select>
+         <br>
+         Do you need food a accommodations?
+         <br>
+            Vegetarian <input type ="checkbox" value ="Vegetarian" name="foodAccommodations">
+            Kosher      <input type ="checkbox"value ="Kosher"name="foodAccommodations">
+            Lactose Free<input type ="checkbox"value ="lactose free" name="foodAccommodations">
+        <br>
+        <button>Submit Me</button>  
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

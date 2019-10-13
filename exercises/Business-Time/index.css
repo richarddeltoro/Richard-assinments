@@ -1,0 +1,11 @@
+.header > h2 {
+    text-align: center;
+    font-family: Franklin Gothic Medium;
+    font-size: 35px;
+    color: aqua;
+}
+
+.newh6{
+    font-size: 24px;
+    color: rgba(242, 245, 246, 0.63);
+}
