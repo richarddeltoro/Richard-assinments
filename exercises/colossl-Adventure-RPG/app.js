@@ -5,7 +5,7 @@ console.log("Howdy there partner would you like to travel back in time to the mi
 let isAlive  = true;
 let hasWon = false;
 let gotAway = false;
-let inventory = ['health', 'six shooter', 'healthPotion']
+let inventory = ['health', 'six shooter','healthPotion']
 
 
 ///enemy Info
@@ -86,7 +86,7 @@ function selectEnemy(){
     let choice = readLine.keyIn(`Quick it's ${enemy.name}! what do you want to do? [f]fight, [r]run, or [q]quit`,{limit:'frq'})
     
     if(choice === 'f'){
-        fight(Enemy)
+        fight(enemy)
     }else if (choice === 'r'){
         run(Enemy)
     }else{
@@ -95,14 +95,14 @@ function selectEnemy(){
     }
  }
     
-function fight(Enemy){
+function fight(enemy){
     console.log(`enemy.hp stats ${enemy.hp}`)
     while(hero.hp > 0 && enemy.hp > 0 && isAlive){
     let choice = readLine.keyIn(`Think fast! would you like [s] to give em lead, [r] to run like hell, [u] to use snake oil`, {limit: 'sru'})
         if(choice === 's'){
             heroAtt(enemy) //This was Enemy with capatol E
         }else if (choice === 'r'){
-            run()///Capitol letter
+            run(Enemy)///Capitol letter
         }else if (choice === 'u'){
             useItem()
             console.log(`That snake oil works wonders. Your heath is now ${hero.hp}`)
@@ -134,9 +134,9 @@ function enemyAtt(Hero, Enemy){
     }
 }
 
-function run(){
+function run(Enemy){
     gotAway = false;
-    let runAaway = Math.floor(Math.random()* 2)
+    let runAaway = Math.floor(Math.random()* 3)
     if (runAaway === 1){
         console.log('You ran like the wind, and got a way safely')
         gotAway = true;
