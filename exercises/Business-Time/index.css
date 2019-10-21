@@ -1,11 +1,48 @@
 .header > h2 {
+    font-size: 65px;
     text-align: center;
-    font-family: Franklin Gothic Medium;
-    font-size: 35px;
-    color: aqua;
+    font-family: Franklin Gothic;
+    /* font-size: 409%; */
+    color: white;
 }
+
+.nav > ul {
+    color: aliceblue;
+    font-size: 23px;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .newh6{
     font-size: 24px;
     color: rgba(242, 245, 246, 0.63);
 }
+
+.h6content{
+    text-align: center;
+    font-size: 183%;
+    font-family: monospace;
+    color: whitesmoke;
+    margin-right: -252px;
+}
+
+img{
+    margin-left: 44px;
+    margin-top: 232px;
+    height: 93px;
+    border-radius: 83%;
+}
+
+span{
+    color: white;
+    font-size: 141%
+}
+
+h2{
+    font-size: 20%;
+    color: black;
+
+}
+    

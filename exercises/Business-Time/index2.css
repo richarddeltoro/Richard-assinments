@@ -1,0 +1,34 @@
+.container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 228px 267px 46px;
+}
+
+
+.header2{
+    border-radius: 124px;
+    font-size: 15px;
+    font-family: Lucida Sans;
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    background-color: blue;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leftPhoto1 {
+    border-radius: 309px;
+    display: flex;
+    grid-row: 1 / 3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./assets/future\ phone.jpg');
+}
+    
+.footer2{
+    margin: 7px;
+    background-color: magenta;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    border-radius: 42px;
+}
