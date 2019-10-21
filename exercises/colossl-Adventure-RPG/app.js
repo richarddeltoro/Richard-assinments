@@ -5,7 +5,7 @@ console.log("Howdy there partner would you like to travel back in time to the mi
 let isAlive  = true;
 let hasWon = false;
 let gotAway = false;
-let inventory = ['health', 'six shooter']
+let inventory = ['health', 'six shooter', 'healthPotion']
 
 
 ///enemy Info
@@ -14,9 +14,9 @@ function Enemy(name, hp, ap){
     this.hp = hp;
     this.ap = ap;
 }
-const laramieGang = new Enemy('Larmie gang member', 50,  12)
-const bill = new Enemy('Bill Willamson', 50,  25)
-const dutch = new Enemy('Duth Van Der Linde', 50,  12)
+const laramieGang = new Enemy('Larmie gang member', 50, 12)
+const bill = new Enemy('Bill Willamson', 50, 25)
+const dutch = new Enemy('Duth Van Der Linde', 50, 12)
 
 const badGuys = [laramieGang, bill, dutch]
 
@@ -27,8 +27,10 @@ function Hero(name, hp, ap){
     this.hp = hp;
     this.ap = ap;
 }
-const  hero = new Hero('John Marston', 200, 14)
-console.log(hero.hp)
+const  thisHero = new Hero('John Marston', 200, 14)
+
+const hero = thisHero
+// console.log(hero)
 
 
 while(isAlive && !hasWon){
@@ -68,7 +70,7 @@ while(isAlive && !hasWon){
      }
  }
 
-let enemy
+let enemy // nopt being read.
 
 function selectEnemy(){
         const random = Math.floor(Math.random()* badGuys.length)
@@ -78,79 +80,61 @@ function selectEnemy(){
 
 
  function enemyEncounter(){
-    let enemy = selectEnemy()
+    let enemyOne = selectEnemy()
+    let enemy = Object.assign({}, enemyOne)
+    console.log(`This is enemy ${enemy}`)
     let choice = readLine.keyIn(`Quick it's ${enemy.name}! what do you want to do? [f]fight, [r]run, or [q]quit`,{limit:'frq'})
+    
     if(choice === 'f'){
-        fight(enemy)
+        fight(Enemy)
     }else if (choice === 'r'){
-        run()
+        run(Enemy)
     }else{
         isAlive = false
         console.log('I rekon, you should of made a better choice there partner')
     }
  }
     
-function fight(enemy){
+function fight(Enemy){
+    console.log(`enemy.hp stats ${enemy.hp}`)
     while(hero.hp > 0 && enemy.hp > 0 && isAlive){
     let choice = readLine.keyIn(`Think fast! would you like [s] to give em lead, [r] to run like hell, [u] to use snake oil`, {limit: 'sru'})
         if(choice === 's'){
-            heroAtt(Enemy)
+            heroAtt(enemy) //This was Enemy with capatol E
         }else if (choice === 'r'){
-            run()
+            run()///Capitol letter
         }else if (choice === 'u'){
             useItem()
             console.log(`That snake oil works wonders. Your heath is now ${hero.hp}`)
         } 
-        enemyAtt(Hero)
+        enemyAtt(hero, enemy)
     }
-    //if/else for when you die hp < 0
 }
 
 
 function heroAtt(Enemy){
     let heroAttack = Math.floor(Math.random()* hero.ap) 
-    console.log(heroAttack)
-    let currentEnemyHp = badGuys.hp - heroAttack;
-    console.log(badGuys.hp)
-    // console.log(currentEnemyHp)
-    console.log(`Nice shooting, his health is ${currentEnemyHp} now`)
+     Enemy.hp = Enemy.hp - heroAttack;
+    console.log(`Nice shooting, his health is ${Enemy.hp} now`)
+    if(Enemy.hp <= 0){
+        console.log(`You defeated ${Enemy.name}`)
+    }
 }
 
-function enemyAtt(Hero){
+function enemyAtt(Hero, Enemy){
+    // console.log(`This is Hero : ${Hero}`) Jeffs Code for testting
+    // console.log(`This is Enemy.ap : ${Enemy.ap}`)
     let eAtt = Math.floor(Math.random()* Enemy.ap)
-    let currentHeroHp = hero.hp - eAtt
-    console.log(`He got you partner for ${eAtt} damage. Your current HP is ${currentHeroHp}`)
+    // console.log(`This is eAtt ${eAtt}`) Jeffs Code for testting
+    Hero.hp = Hero.hp - eAtt
+    console.log(`He got you partner for ${eAtt} damage. Your current HP is ${Hero.hp}`)
+    if(Hero.hp <= 0){
+        console.log('DEAD')
+        return isAlive = false
+    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function heroAtt(Enemy){
-//     let attack = Math.floor(Math.random()* hero.ap)
-//     Enemy.hp = Enemy.hp - attack;
-//     console.log(`Nice shooting, his health is ${+attack} now`)
-
-// }
-
-// function enemyAtt(Hero){
-//     let eAtt = Math.floor(Math.random()* Enemy.att)
-//     hero.hp = hero.hp - eAtt
-//     console.log(`He got you partner for ${eAtt}`)
-// }
-
-function run(Enemy){
+function run(){
     gotAway = false;
     let runAaway = Math.floor(Math.random()* 2)
     if (runAaway === 1){
@@ -161,6 +145,11 @@ function run(Enemy){
     }
 }
 
+
+function useItem(healthPotion){
+    hero.hp = hero.hp += 60
+    return healthPotion
+}
 
 
 
