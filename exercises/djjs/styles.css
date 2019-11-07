@@ -1,0 +1,12 @@
+#box1{
+    border-radius: 118%;
+    padding: 67px;
+    left: 41px;
+    font-size: 125px;
+    font-family: cursive;
+    color:#080318d4;
+    border: 10px solid #b5a19f;
+    border-left-color: #b5a1a0;
+    border-right-color: #b5a1a0;
+    border-top-color: #b5a1a0;
+}

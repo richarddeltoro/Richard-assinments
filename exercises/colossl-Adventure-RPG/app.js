@@ -1,11 +1,12 @@
 const readLine = require("readline-sync");
 
-console.log("Howdy there partner would you like to travel back in time to the mid 1800's during the cowboy era? As a fictional character? An outlaw who goes by the named John Marston?")
+console.log("Howdy yall! You are about to  travel back in time to the mid 1800's during the cowboy era? As a fictional character, an outlaw who goes by the named John Marston?")
 
 let isAlive  = true;
 let hasWon = false;
 let gotAway = false;
-let inventory = ['health', 'six shooter','healthPotion']
+let finalEnemy = false;
+let inventory = ['Wakie Tabakie', 'six shooter','Snake oil']
 
 
 ///enemy Info
@@ -16,7 +17,7 @@ function Enemy(name, hp, ap){
 }
 const laramieGang = new Enemy('Larmie gang member', 50, 12)
 const bill = new Enemy('Bill Willamson', 50, 25)
-const dutch = new Enemy('Duth Van Der Linde', 50, 12)
+const dutch = new Enemy('Dutch Van Der Linde', 80, 45)
 
 const badGuys = [laramieGang, bill, dutch]
 
@@ -27,34 +28,25 @@ function Hero(name, hp, ap){
     this.hp = hp;
     this.ap = ap;
 }
-const  thisHero = new Hero('John Marston', 200, 14)
+const hero = new Hero('John Marston', 200, 14)
 
-const hero = thisHero
+// const hero = thisHero
 // console.log(hero)
 
 
+console.log(" Good luck and try not to pick a fight with the wrong fella.")
+console.log("You best get going the law is looking for you!")
 while(isAlive && !hasWon){
-    let  choice = readLine.keyIn(`[y] to continue [n] for end game`, {limit: 'yn'})
-    if(choice === "y"){
-       console.log(" you are now in the wild west of America in the mid 1800's. Good luck and try not to pick a fight with the wrong fella")
-       gameStart()
-    } else{
-        isAlive = false
-        console.log('Dont blame you the wild West was a dangerous time')
-    }
-}
-
- function gameStart(){
-    console.log("Hey there feller, you best get going the law is looking for you!")
-    let choice2 = readLine.keyIn(`[w]to start walking [i] To check Inventory [q] to Quit`, {limit: 'wiq'})
-    if(choice2 === 'w'){
+    let choice = readLine.keyIn(`[w]to start walking [i] To check Inventory [q] to Quit`, {limit: 'wiq'})
+    if(choice === 'w'){
         walkFunc()
-    }else if(choice2 === 'i'){
+    }else if(choice === 'i'){
         printInventory()
     }else{
         isAlive = false
+        console.log('Dont blame you, the wild West was a dangerous time.')
     }
- }
+}
 
  function printInventory(){
      console.log(inventory)
@@ -64,7 +56,6 @@ while(isAlive && !hasWon){
      let random = Math.floor(Math.random()*4)
      if(random === 3){
         enemyEncounter()
-        gotAway = true
      }else {
          console.log("You continue walking")
      }
@@ -74,21 +65,28 @@ let enemy // nopt being read.
 
 function selectEnemy(){
         const random = Math.floor(Math.random()* badGuys.length)
-        const enemy = badGuys.splice(random, [1])[0]
+        const enemy = badGuys.splice(random, 1)[0]
+        if(badGuys.length === 0){
+            console.log('This is the last enemy! Good luck!')
+            finalEnemy = true
+        }
         return enemy
 }
 
 
  function enemyEncounter(){
-    let enemyOne = selectEnemy()
-    let enemy = Object.assign({}, enemyOne)
-    console.log(`This is enemy ${enemy}`)
-    let choice = readLine.keyIn(`Quick it's ${enemy.name}! what do you want to do? [f]fight, [r]run, or [q]quit`,{limit:'frq'})
+    let enemy = selectEnemy()
+    // let enemy = Object.assign({}, enemyOne)
+    let choice = readLine.keyIn(`Quick it's ${enemy.name}! what do you want to do? [f]fight, [r]run, or [q]Quit` ,{limit:'frq'})
     
     if(choice === 'f'){
         fight(enemy)
+        if(finalEnemy){
+            hasWon = true
+            console.log('Yeehaw, thats all of them. Victory is Ours!!')
+        }
     }else if (choice === 'r'){
-        run(Enemy)
+        run(enemy)
     }else{
         isAlive = false
         console.log('I rekon, you should of made a better choice there partner')
@@ -96,59 +94,55 @@ function selectEnemy(){
  }
     
 function fight(enemy){
-    console.log(`enemy.hp stats ${enemy.hp}`)
-    while(hero.hp > 0 && enemy.hp > 0 && isAlive){
-    let choice = readLine.keyIn(`Think fast! would you like [s] to give em lead, [r] to run like hell, [u] to use snake oil`, {limit: 'sru'})
+    // console.log(`enemy.hp stats ${enemy.hp}`)
+    while(hero.hp > 0 && enemy.hp > 0 && !gotAway){
+        let choice = readLine.keyIn(`Think fast! would you like [s] to give em lead, [r] to run like hell, [u] to use snake oil`, {limit: 'sru'})
         if(choice === 's'){
-            heroAtt(enemy) //This was Enemy with capatol E
+            heroAtt(enemy) 
+            enemyAtt(enemy)
         }else if (choice === 'r'){
-            run(Enemy)///Capitol letter
+            run(enemy)
         }else if (choice === 'u'){
             useItem()
-            console.log(`That snake oil works wonders. Your heath is now ${hero.hp}`)
-        } 
-        enemyAtt(hero, enemy)
+        }
     }
+    gotAway = false
 }
 
 
-function heroAtt(Enemy){
+function heroAtt(enemy){
     let heroAttack = Math.floor(Math.random()* hero.ap) 
-     Enemy.hp = Enemy.hp - heroAttack;
-    console.log(`Nice shooting, his health is ${Enemy.hp} now`)
-    if(Enemy.hp <= 0){
-        console.log(`You defeated ${Enemy.name}`)
+     enemy.hp -= heroAttack;
+    console.log(`Nice shooting, his health is ${enemy.hp} now`)
+    if(enemy.hp <= 0){
+        console.log(`You defeated ${enemy.name}`)
     }
 }
 
-function enemyAtt(Hero, Enemy){
-    // console.log(`This is Hero : ${Hero}`) Jeffs Code for testting
-    // console.log(`This is Enemy.ap : ${Enemy.ap}`)
-    let eAtt = Math.floor(Math.random()* Enemy.ap)
-    // console.log(`This is eAtt ${eAtt}`) Jeffs Code for testting
-    Hero.hp = Hero.hp - eAtt
-    console.log(`He got you partner for ${eAtt} damage. Your current HP is ${Hero.hp}`)
-    if(Hero.hp <= 0){
+function enemyAtt(enemy){
+    let eAtt = Math.floor(Math.random()* enemy.ap)
+    hero.hp -= eAtt
+    console.log(`He got you partner for ${eAtt} damage. Your current HP is ${hero.hp}`)
+    if(hero.hp <= 0){
         console.log('DEAD')
-        return isAlive = false
+        isAlive = false
     }
 }
 
-function run(Enemy){
-    gotAway = false;
-    let runAaway = Math.floor(Math.random()* 3)
-    if (runAaway === 1){
+function run(enemy){
+    let runAway = Math.floor(Math.random()* 3)
+    if (runAway === 1){
         console.log('You ran like the wind, and got a way safely')
         gotAway = true;
     }else{
-        fight(Enemy)
+        enemyAtt(enemy)
     }
 }
 
 
-function useItem(healthPotion){
-    hero.hp = hero.hp += 60
-    return healthPotion
+function useItem(){
+    hero.hp += 60
+    console.log(`That snake oil works wonders. Your heath is now ${hero.hp}`)
 }
 
 

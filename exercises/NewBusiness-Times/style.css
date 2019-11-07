@@ -1,0 +1,94 @@
+* {
+ margin: 0%;  
+ padding: 0%; 
+ font-family: cursive;
+}
+
+#container{
+    background-image: url(pics/moneymoney.jpg);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+}
+
+header{
+    display: flex;
+    justify-self: center;
+    grid-row: 4/ 10;
+    grid-column: 1 / 3;
+}
+
+
+    
+
+
+nav {
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    grid-column: 1 / 3;
+    position: fixed;
+    background-color: rgb(223, 212, 212);
+    font-size: 31px;
+    width: 686px;
+}
+
+
+
+
+footer{
+    grid-row: 14/ -1;
+    grid-column: 1 / -1;
+    background-color:#c5bea6;
+}
+
+
+.button1{
+    padding: 15px;
+    border-radius: 21%;
+    font-size: 21px;
+
+}
+
+.button2{
+    padding: 6px;
+    border-radius: 11px;
+    font-size: 21px;
+}
+
+.button3{
+    padding: 8px;
+    border-radius: 7px;
+    font-size: 21px;
+}
+
+.img2{
+    margin-left: 1590px;
+    width: 1%;
+    border-radius: 96%;
+}
+
+p {
+    margin-left: 1590px;
+    font-size: 10px;
+    position: relative;
+    left: 2%;
+    bottom: 23px;
+}
+
+.menu{
+    border-radius: 30px;
+    padding: 31px;
+    font-size: 43px;
+    background-color: blue;
+    display: grid;
+    grid-row: 4 / 10;
+    grid-column: 4;
+}
+
+.menu2{
+    display: flex;
+    flex-direction: column;
+
+}

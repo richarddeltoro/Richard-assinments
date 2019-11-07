@@ -13,11 +13,19 @@ function makeTodo(todo){
     const h1 = document.createElement("h1")
     const p = document.createElement("p")
     const img = document.createElement("img")
+    
+
 
     // edit element
     h1.textContent = todo.title
     p.textContent = todo.description
     img.src = todo.imgUrl
+    
+   
+    if(todo.completed){
+        h1.style.textDecoration = "line-through";
+    }
+    
     
     //append
     container.appendChild(h1)
@@ -29,7 +37,13 @@ function makeTodo(todo){
 
 }
 
-
+document.form1.addEventLister("submit", (e)=>{
+        e.preventDefault()
+    const newToDo = {
+        title: document.form1.title.value
+    }
+    axios.post("https://api.vschool.io/richard/todo/", )
+})
 
 
 

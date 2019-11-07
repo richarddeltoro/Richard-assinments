@@ -1,0 +1,14 @@
+@media (max-width: 500px){
+
+}
+
+img{
+    animation-name: drive;
+   animation-duration: 1.5s;
+   animation-direction: reverse;
+}
+
+@keyframes drive{
+    from{ transform: translateX(-100px)}
+    to{ transform: translateX(1000px)}
+}
