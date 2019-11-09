@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+#container{
+    display:grid;
+    background-color: #fdf6f6;
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-rows: 60px 100px 581px;
+    border: 3px solid black;
+}
+
+
+h2{
+    background-color: #f7e00d;
+    border: 12px double;
+    font-variant: discretionary-ligatures;
+    border-radius: 95px;
+    text-align: center;
+    font-size: 39px;
+    grid-row: 2 / -1;
+    grid-column: 4/ 10;
+    padding: 46px;
+    
+}
+
+.imgDiv{
+   grid-column:  1 /-1;
+   background-image: url("https://techcrunch.com/wp-content/uploads/2015/03/groceries-e1554037962210.jpg?w=1390&crop=1");
+}
+
+.inputcss1{
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+button{
+    border-radius: 4px;
+}
+
+#myUnOder{
+    font-size: 20px;
+}
