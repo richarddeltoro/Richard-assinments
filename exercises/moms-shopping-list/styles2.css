@@ -1,0 +1,43 @@
+@media (max-width: 480px){
+    #container{
+    width: 537px;
+    height: 951px;
+    border: 3px solid black;
+    
+    }
+
+    .imgDiv{
+        height: 951px;
+
+    }
+
+    .inputcss1{
+        font-size: 30px;
+
+    }
+    #button{
+        border: 3px dotted;
+        border-radius: 4px;
+        background-color: white;
+        font-size: 32px;
+    }
+
+
+    h2{
+        height: 751px;
+        width: 314px;
+        background-color: #f7e00d;
+        border: 12px double;
+        font-variant: discretionary-ligatures;
+        border-radius: 95px;
+        text-align: center;
+        margin-left: -119px;
+        opacity: .8;
+    }
+
+    #myUnOder{
+        margin-bottom: 0px;
+        font-size: 33px;
+    }
+
+}
