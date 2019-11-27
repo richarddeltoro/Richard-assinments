@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cinzel|Permanent+Marker|Ropa+Sans&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mukta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id ="container">
+        <div  class="imgDiv"></div>
+        <h5>BOOK YOUR FLIGHT TODAY</h5>
+        <div class ="formDiv">
+            <form name ="myForm1" >
+                <div class ="formStyleRadio">
+                One Way:<input type ="radio" name ="flightInfo" class ="flightRadio" value ="oneway" required>
+                RoundTrip:<input type ="radio" name ="flightInfo" class ="flightRadio" value ="round Trip" required>
+                Multi-City:<input type ="radio" name ="flightInfo" class ="flightRadio" value ="muilti-city" required>
+                </div>
+                <div  class ="nameFormStyle" >
+                    <input placeholder="First Name" type="text" name ="firstName" class ="firstNameStyle" required>
+                    <input type="text" placeholder="Last Name"  name = "lastName" class ="lastNameStyle" required>
+                    <input type="number" placeholder ="age" class ="ageStyle" name ="age" required>
+                </div>
+                <!-- flying from -->
+            <div name ="selectForm" class="selectForm">
+            <span>Flying From</span><select name ="SelectOP" required>
+                    <option value="Las Vegas">Las Vegas</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Seattle">Seattle</option>
+                </select>
+                <!-- arriving at -->
+                <span>Arriving at</span><select name ="SelectOP2" required>
+                    <option value="Denver">Denver</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="D.C">D.C</option>
+                </select>
+            </div>         
+            <div name ="checkBoxForm" class="checkBoxForm">
+                <h6>Please make a food selection</h6> 
+            Steak Dinner<input type="checkbox" name="food" value="steak dinner">
+                Shrip Dinner<input type="checkbox" name="food" value="shrip dinner">
+                Vegain<input type="checkbox" name="food" value="vegain">
+                Kosther<input type="checkbox" name="food" value="kosther">
+            </div>
+                <button id ="button">Book Flight</button>
+            </form>      
+        </div>
+            <div class ="theLastDiv">AIR BUS</div>
+            <div id = "alertboxStyle"></div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

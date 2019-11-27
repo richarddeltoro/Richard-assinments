@@ -1,0 +1,102 @@
+ *{
+    margin: 0px;
+ }
+
+
+ @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+ 
+
+ #container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:  200px 200px 200px 315px;
+ }
+
+
+ .imgDiv{
+     display: flex;
+     background-repeat: no-repeat;
+     background-size: cover;
+     grid-column: 1 /-1;
+     grid-row: 1 / -1;
+     background-image: url(https://static.lakana.com/mmm-global-us-east-1/photo/2019/08/07/via%20CNN%20Airbus%20A321XLR_1565238450597.jpg.jpg.jpg_39576845_ver1.0_1280_720.jpg);
+ }
+
+ .formDiv{
+    border: 2px solid;
+    grid-column: 2/ 7;
+    background-color: whitesmoke;
+    grid-row: 2 / 4;
+    border-radius: 30px;
+ }
+
+ .formStyleRadio{
+     margin-top: 38px;
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ h5{
+    color: blue;
+    font-size: 61px;
+    display: grid;
+    grid-column: 8 / -1;
+    grid-row: 2/ 3;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bolder;
+ }
+
+ .nameFormStyle{
+    margin-top: 31px;
+    text-align: center;
+ }
+
+ .selectForm{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column;
+    width: 133px;
+    margin-top: 21px;
+    margin-left: 7px;
+ }
+
+ .checkBoxForm{
+    margin-top: 40px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+
+ h6{
+    font-weight: 100;
+    font-family: serif;
+    font-size: 15px;
+    font-family:'Roboto Condensed', sans-serif;
+ }
+
+ #button{
+    border-radius: 7px;
+    position: relative;
+    left: 247px;
+    top: 55px;
+    padding: 6px;
+    width: 170px;
+ }
+
+ .theLastDiv{
+    color: #86a9d0;
+    grid-column: 3 / 10;
+    grid-row: 4 / 5;
+    text-align: center;
+    font-size: 130px;
+    margin-top: 94px;
+    font-family: 'Varela Round', sans-serif;
+ }
+
+ span{
+    font-family: 'Catamaran', sans-serif;
+    direction: rtl;
+ }

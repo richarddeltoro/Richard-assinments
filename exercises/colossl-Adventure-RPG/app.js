@@ -61,7 +61,7 @@ while(isAlive && !hasWon){
      }
  }
 
-let enemy // nopt being read.
+let enemy
 
 function selectEnemy(){
         const random = Math.floor(Math.random()* badGuys.length)
@@ -76,9 +76,7 @@ function selectEnemy(){
 
  function enemyEncounter(){
     let enemy = selectEnemy()
-    // let enemy = Object.assign({}, enemyOne)
     let choice = readLine.keyIn(`Quick it's ${enemy.name}! what do you want to do? [f]fight, [r]run, or [q]Quit` ,{limit:'frq'})
-    
     if(choice === 'f'){
         fight(enemy)
         if(finalEnemy){
