@@ -1,0 +1,112 @@
+*{
+margin: 0px;
+padding: 1px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 382px 382px 382px 66px 45px 45px 45px;
+    grid-gap: 11px;
+    background-color: rgba(154, 45, 45, 0.7);
+}
+
+
+#Goombas{
+    background-image: url(https://www.goombastomp.com/wp-content/uploads/2018/06/goomba-mta.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-color: rgba(139, 79, 46, 0.75);
+}
+
+#Bob-ombs{
+    background-image: url(https://vignette.wikia.nocookie.net/ssb/images/8/8d/Bob-OmbWiiU.png/revision/latest?cb=20140409201131);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #000000a6
+}
+
+#Cheep-cheeps{
+    background-image: url(https://i.pinimg.com/originals/97/2f/77/972f773ad9e55a25a5908f1df025672d.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+
+}
+
+
+.button-div{
+    margin: 20px 73px;
+    height: 34px;
+    border-radius: 12px;
+    border: solid 3px;
+    font-size: 24px;
+    height: 42px;
+}
+
+.input1Style{
+    margin: 285px 96px 0px 78px;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.span1{
+    color: gold;
+    position: relative;
+    top: 28px;
+    left: 101px;
+    font-family: 'Solway', serif;
+}
+
+.input2Style{
+    position: relative;
+    top: 323px;
+    left: -12px;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.input3Style{
+    position: relative;
+    left: -12px;
+    top: 289px;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+#sum{
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:whitesmoke;
+}
+
+
+@media (min-width:500px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .button-div{
+        grid-column: 2 / 3;
+        margin: inherit;
+    }
+    
+    .span1{
+        color: gold;
+        position: relative;
+        top: 46px;
+        left: -199px;
+        font-family: 'Solway', serif;
+    }
+
+    h6{
+        position: relative;
+        right: 419px;
+        top: 127px;
+    }
+
+}
