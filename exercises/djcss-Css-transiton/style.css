@@ -30,7 +30,7 @@
    
  /* transition: background-color 1s linear 1s, width 1s linear; */
 }
-#audioDrum1:hover{
+#drum1:hover{
     background-color: white;
     box-shadow: navy;
     
@@ -42,9 +42,11 @@
     background-color: yellow;
     grid-column: 2/ 3;
     border-radius: 8px;
+    transition: background-color 1s linear 1s
 }
 #box2:hover{
-    background-color: orange;
+    background-color:blue;
+
 }
 
 
@@ -64,7 +66,7 @@
 }
 
 #box4:hover{
-    background-color: greenyellow;
+    background-color: rgb(44, 6, 214);
 }
 
 #box5{

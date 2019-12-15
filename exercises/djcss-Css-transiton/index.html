@@ -7,42 +7,121 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css">
 </head>
 <body>
     <div id ="container">
         <div id ="header">DJ CSS</div>
 
-        <!-- <div id ="box1"> -->
+       <!-- DRUM 1 -->
         <button id="drum1" onclick="runIt()" type="button">   
             <audio id ="audioDrum1" src="audio/drumKick.wav" type = "audio/mpeg">
                 <!-- <source src="audio/drumKick.wav" type="audio/mpeg"> -->
             </audio>
             <i class="fas fa-drum fa-5x"></i>
         </button>     
-        <!-- </div> -->
-        <button id ="box2">
-            <audio src="audio/drumKick2.mp3" type ="audio/mpeg" id ="audioDrum2">
-            </audio>
-        </button>
+    <!-- DRUM 1 -->
 
-        <div id ="box3"></div>
-        <div id ="box4"></div>  
-        <div id ="box5"></div>  
-        <div id ="box6"></div>  
-        <div id ="box7"></div>  
-        <div id ="box8"></div>  
-        <div id ="box9"></div>  
-        <div id ="box10"></div>  
-        <div id ="box11"></div>  
-        <div id ="box12"></div>  
-        <div id ="box13"></div>  
-        <div id ="box14"></div>  
-        <div id ="box15"></div>  
-        <div id ="box16"></div>  
-        <div id ="box17"></div>  
-        <div id ="box18"></div>  
-        <div id ="box19"></div>  
+    <!-- CLAP 1 -->
+        <button id ="box2" onclick ="runIt2()" type="button">
+            <audio id ="audioDrum2" src="audio/clap.wav" type ="audio/mpeg">
+            </audio>
+            <i class="fas fa-sign-language fa-5x"></i>
+        </button>
+    <!-- CLAP 1 -->
+
+        <!-- CHIM 1 -->
+        <button id ="box3" onclick="runIt3()" type="button">
+            <audio id ="audiocym1"  src="cym.wav" type ="audio/mpeg">
+            </audio>
+            <i class="fas fa-record-vinyl fa-5x" ></i>
+        </button>
+        <!-- CHIM 1 -->
+        <button id ="box4" onclick ="runIt4()" type="button">
+            <audio  id ="audioBass1" src="audio/BassDrum.wav" type = "audio/mpeg">
+            </audio>
+            <i class="fas fa-drum-steelpan fa-5x"></i>
+        </button> 
+
+        <!-- DOG BARK -->
+        <button id ="box5" onclick ="runIt5()" type="button">
+            <audio  id = "DogBark1"src="audio/DogBark2.mp3" type = "audio/mpeg"></audio>
+            <i class ="fas fa-dog fa-5x"></i>
+        </button>  
+        <!-- DOG BARK -->
+
+
+        <!-- BROKEN GLASS -->
+        <button id ="box6" onclick ="runIt6()" type="button">
+            <audio id = "glass"src="audio/glass3.mp3" type ="audio/mpeg"></audio>
+            <i class="fas fa-bahai fa-5x"></i>
+        </button>  
+        <!-- BROKEN GLASS -->
+
+        <!-- women Screming -->
+        <button id ="box7" onclick ="runIt7()" type="button">
+            <audio id = "WomanScrem"src="audio/WomanScrem3.mp3" type = "audio/mpeg"></audio>
+            <i class="fas fa-female fa-5x"></i>
+        </button>  
+        <!-- women Sereming -->
+
+
+        <!-- DJ SRATCH -->
+        <button id ="box8" onclick ="runIt8()" type="button">
+            <audio id = "djscrath"src="audio/djscrathFinal.mp3" type = "audio/mpeg"></audio>
+            <i class="fas fa-sync fa-5x"></i>
+        </button>  
+        <!-- DJ SCRACH -->
+
+
+        <!--Bomb -->
+        <button id ="box9" onclick ="runIt9()" type="button" >
+            <audio id = "Bomb"src="audio/Explostion1.mp3" type ="audio/mpeg"></audio>
+            <i class="fas fa-bomb fa-5x"></i>
+        </button>  
+        <!-- Bomb -->
+
+
+        <!--Guitaur  -->
+        <button id ="box10" onclick ="runIt10()" type="button">
+            <audio id = "guitar" src="audio/electricGuitar2.mp3" type = "audio/mpeg"></audio>
+            <i class="fas fa-guitar fa-5x"></i>
+        </button> 
+        <!--Guitar -->
+
+        <!-- Bell -->
+        <button id ="box11" onclick="runIt11()" type="button">
+            <audio id ="Bell" src="audio/BellSound1.mp3" type = "audio/mpeg"></audio>
+            <i class="fas fa-bell fa-5x"></i>
+        </button> 
+
+        <!-- Man Scream -->
+        <button id ="box12" onclick="runIt12()" type="button">
+            <audio  id = "manScrem"src="audio/Man screaming1.mp3" type = "audio/mpeg"></audio>
+            <i class="fas fa-user-alt fa-5x"></i>
+        </button> 
+
+
+        <!-- Car Sound -->
+        <button id ="box13" onclick ="runIt13()" type="button">
+            <audio id ="carsound"src="audio/carsound2.mp3" type = "audio/mpeg"></audio>
+            <i class="fas fa-car fa-5x"></i>
+        </button>  
+        <!-- Car Sound -->
+
+        <!-- WARNING SOUND -->
+        <button id ="box14" onclick ="runIt14()" type="button">
+            <audio id = "alarm"src="audio/alarmsound2.mp3" type = "audio/mpeg"></audio>
+            <i class="fas fa-volume-up fa-5x"></i>
+        </button> 
+        <!-- WARNING SOUND -->
+
+        <!-- lighting -->
+        <button id ="box15" onclick="runIt15()" type="button">
+            <audio id = "thunder"src="audio/thunder2.mp3" type = "audio/mpeg"></audio>
+            <i class="fas fa-poo-storm fa-5x"></i>
+        </button> 
+        <!-- ligthing -->
     </div>  
     <script src="app.js"></script>   
 </body>
