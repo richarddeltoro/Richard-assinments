@@ -1,0 +1,200 @@
+*{
+ margin: 0; 
+ padding: 0px;  
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 56px 107px 107px 107px 107px 107px;
+    background-color: black;
+    grid-gap: 9px;
+}
+
+#header{
+    background-color: #c4e13c;
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 39px;
+    font-family: 'Dosis', sans-serif;
+}
+/* BOX 1 */
+#drum1{
+    background-color: #f3cb04;
+    grid-column: 1 / 1;
+    transition-property: background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+    border-radius: 8px;
+   
+ /* transition: background-color 1s linear 1s, width 1s linear; */
+}
+#audioDrum1:hover{
+    background-color: white;
+    box-shadow: navy;
+    
+}
+/* BOX 1 */
+
+
+#box2{
+    background-color: yellow;
+    grid-column: 2/ 3;
+    border-radius: 8px;
+}
+#box2:hover{
+    background-color: orange;
+}
+
+
+#box3{
+    background-color: tomato;
+    grid-column: 3 / 4;
+    border-radius: 8px;
+}
+
+#box3:hover{
+    background-color: navy;
+}
+
+#box4{
+    background-color: yellowgreen;
+    border-radius: 8px;
+}
+
+#box4:hover{
+    background-color: greenyellow;
+}
+
+#box5{
+    background-color: teal;
+    border-radius: 8px;
+}
+
+#box5:hover{
+    background-color: greenyellow;
+    transition: background-color 1s linear 1s, width 1s linear;
+}
+
+#box6{
+    background-color: royalblue;
+    border-radius: 8px;
+}
+
+#box6:hover{
+    background-color: greenyellow;
+}
+
+#box7{
+    background-color: #5d61e1;
+    border-radius: 8px;
+}
+
+#box7:hover{
+    background-color: greenyellow;
+}
+
+#box8{
+    background-color: orchid;
+    border-radius: 8px;
+}
+
+#box8:hover{
+    background-color: greenyellow;
+}
+
+#box9{
+    background-color: green;
+    border-radius: 8px;
+}
+
+#box9:hover{
+    background-color: greenyellow;
+}
+
+#box10{
+    background-color: #d0e714;
+    border-radius: 8px;
+}
+
+#box10:hover{
+    background-color: greenyellow;
+}
+
+#box11{
+    background-color: #572cdc;
+    border-radius: 8px;
+}
+
+#box11:hover{
+    background-color: greenyellow;
+    transition: background-color 1s ease-in 1s, width 1s linear;
+
+}
+
+#box12{
+    background-color: #def3de;
+    border-radius: 8px;
+}
+#box12:hover{
+    background-color: greenyellow;
+}
+
+#box13{
+    background-color: #54f954;
+    border-radius: 8px;
+}
+#box13:hover{
+    background-color: greenyellow;
+}
+
+#box14{
+    background-color: green;
+    border-radius: 8px;
+}
+#box14:hover{
+    background-color: greenyellow;
+}
+
+#box15{
+    background-color: #c1c2dc;
+    border-radius: 8px;
+}
+#box15:hover{
+    background-color: greenyellow;
+}
+
+#box16{
+    background-color: green;
+    border-radius: 8px;
+}
+#box16:hover{
+    background-color: greenyellow;
+}
+
+#box17{
+    background-color: green;
+    border-radius: 8px;
+}
+#box17:hover{
+    background-color: greenyellow;
+}
+
+#box18{
+    background-color: green;
+    border-radius: 8px;
+}
+#box18:hover{
+    background-color: greenyellow;
+}
+
+#box19{
+    background-color: green;
+    border-radius: 8px;
+}
+#box19:hover{
+    background-color: greenyellow;
+}
+
+
