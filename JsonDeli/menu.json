@@ -1,0 +1,33 @@
+{
+	"Appetizers": [{
+        "Try Our Option1": "This is a mix of Flavorful items, this is more of a unhealthy choice",
+        "Option1": ["Spinach Dip", "Chicken Wings", "Flavor"],
+        "Or try Option2": "This is more on the Helthy side",
+		"Option2":["Celery & Dip", "Sample Salad", "Chips & Dip"]
+	}],
+
+	"Cold Sandwiches": [{
+        "We have Subs": "This is the best cold subs you'll have!",
+		"Ruby": ["rye bread ", "Turky Meat ", "cheese "],
+		"BLT": ["Bacon", "Lettce", "tomato"],
+		"Turkey": ["Sourdough", "Turkey Meat", "swiss cheese"]
+	}],
+
+    "Desserts":[{
+        "have a Sweet tooth": "We have some sweet savory desserts",
+        "Churros": ["Cinnamon", "Flour", "Sugar"],
+        "Ice Cream": ["Ice", "Cream", "Flavor of Choice"],
+        "Chesee Cake": ["Chesee", "Cream", "Sugar"]
+    }],
+
+    "Drinks": [{
+        "We have plenty of drinks":"We have everythinhg from your classics to house drinks",
+        "Cherry Lemonade": ["Sprit", "Cherry Flavor", "Lemon"],
+        "House Drinks": ["Pepsi", "Coke", "Squirt", "Lemonade"]
+      
+    }]
+
+ 
+
+
+}
